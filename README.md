@@ -4,6 +4,8 @@ This holds Reconciliation API implementations (compliant to
 https://reconciliation-api.github.io/specs/0.1/) for use with OpenRefine and
 other software supporting the reconciliation API standard.
 
+This Reconciliation API implementation enables the inference of Brick equipment and point classes from unstructured BMS labels. If you want to learn how to use this tool to create Brick models, check out our [tutorial video](https://www.youtube.com/watch?v=LKcXMvrxXzE).
+
 ## How to Install Reconciliation Server
 
 You will only need to set this up once before you can use the Reconciliatio nserver
