@@ -1,14 +1,14 @@
 abbrmap = {
-    "ahu": ["ahu", "equip"],
-    "vav": ["vav"],
-    "fcu": ["fcu"],
+    "ahu": ["air", "handler", "unit"],
+    "vav": ["variable", "volume", "box"],
+    "fcu": ["fan", "coil", "unit"],
     "avg": ["average"],
     "cmd": ["command"],
     "elec": ["electrical"],
     "equip": ["equipment"],
     "freq": ["frequency"],
     "occ": ["occupied"],
-    "rtu": ["rtu"],
+    "rtu": ["rootftop", "unit"],
     "roof": ["rooftop"],
 
     "sp": ["setpoint"],
@@ -16,6 +16,7 @@ abbrmap = {
     "stpt": ["setpoint"],
 
     "temp": ["temperature"],
+    "tmp": ["temperature"],
     "t": ["temperature"],
     "unocc": ["unoccupied"],
     "volt": ["voltage"],
