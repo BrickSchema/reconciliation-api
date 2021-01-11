@@ -1,5 +1,7 @@
 # Reconciliation APIs
 
+**Note: there is a publicly hosted instance of this running at https://reconciliation.brickschema.org/reconcile . You can input that URL directly into OpenRefine**
+
 This holds Reconciliation API implementations (compliant to
 https://reconciliation-api.github.io/specs/0.1/) for use with OpenRefine and
 other software supporting the reconciliation API standard.
