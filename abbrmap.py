@@ -61,7 +61,7 @@ abbrmap = {
     
     'mat': ['mixed', 'air', 'temperature'],
     'wcadj': ['warm/cool', 'adjust'],
-    'sapﬂ': ['static', 'pressure'],
+    'sap': ['static', 'pressure'],
     'znt': ['zone', 'space', 'temperature'],
     
     'htgo': ['heating', 'valve', 'analog', 'signal'],
@@ -110,7 +110,7 @@ abbrmap = {
     'sdwns': ['shutdown', 'status'],
     'sfa': ['supply', 'fan', 'alarm'],
     'boxhtgc': ['box', 'heating', 'command'],
-    'shtgcﬂ': ['supplemental', 'heating', 'command'],
+    'shtgc': ['supplemental', 'heating', 'command'],
     'htgminfl': ['heating', 'minimum', 'cfm', 'setpoint'],
     'commonsp': ['common', 'setpoint'],
     'clgbias': ['active', 'cooling', 'bias'],
