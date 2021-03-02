@@ -138,4 +138,18 @@ abbrmap = {
     'boxelec': ['electrical', 'heat', 'protection', 'enabled'],
     'acreq': ['autocalibration', 'required'],
     'acact': ['autocalibration', 'in', 'process'],
+    
+    'effclg': ['effective', 'cooling', 'setpoint'],
+    'effhtg': ['effective', 'heating', 'setpoint'],
+    'htgvlv': ['heating', 'valve'],
+    'htgocc': ['occ', 'heating', 'setpoint'],
+    'htgoccminflow': ['occ', 'heating', 'minimum', 'flow'],
+    'htgunocc': ['night', 'heating', 'setpoint'],
+    'network': ['network', 'setpoint'],
+    'occsched': ['occupancy', 'schedule'],
+    'saf': ['supply', 'airflow', 'rate'],
+    'vp': ['velocity', 'pressure'],
+    'clgocc': ['occ', 'cooling'],
+    'autocal': ['autocalibration'],
+    
 }
