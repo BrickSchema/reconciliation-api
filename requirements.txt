@@ -1,3 +1,4 @@
 brickschema
 Flask-Jsonpify
 Flask
+Flask-caching
