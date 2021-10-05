@@ -38,10 +38,10 @@ def resolve(q):
     tags = list(tags)
     brick_tags = flatten([tagmap.get(tag.lower(), [tag]) for tag in tags])
 
-    if q.get('type') == 'PointClass':
-        brick_tags += ['Point']
-    elif q.get('type') == 'EquipmentClass':
-        brick_tags += ['Equipment']
+    #if q.get('type') == 'PointClass':
+    #    brick_tags += ['Point']
+    #elif q.get('type') == 'EquipmentClass':
+    #    brick_tags += ['Equipment']
 
     res = []
     most_likely, leftover = inf.most_likely_tagsets(brick_tags, limit)
@@ -51,7 +51,7 @@ def resolve(q):
             'name': ml,
             'score': (len(brick_tags) - len(leftover)) / len(brick_tags),
             'match': len(leftover) == 0,
-            'type': [{"id": "PointClass", "name": "PointClass"}],
+            'type': [{"id": q.get("type"), "name": q.get("type")}],
         })
     print('returning', res)
     return res

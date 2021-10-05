@@ -10,6 +10,8 @@ abbrmap = {
     "occ": ["occupied"],
     "rtu": ["rootftop", "unit"],
     "roof": ["rooftop"],
+    "dmp": ["damper"],
+    "pos": ["position"],
 
     "sp": ["setpoint"],
     "spt": ["setpoint"],
