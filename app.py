@@ -11,7 +11,8 @@ metadata = {
     "name": "Brick Reconciliation Service",
     "defaultTypes": [
         {"id": "EquipmentClass", "name": "EquipmentClass"},
-        {"id": "PointClass", "name": "PointClass"}
+        {"id": "PointClass", "name": "PointClass"},
+        {"id": "BrickClass", "name": "BrickClass"}
     ]
 }
 
@@ -38,10 +39,10 @@ def resolve(q):
     tags = list(tags)
     brick_tags = flatten([tagmap.get(tag.lower(), [tag]) for tag in tags])
 
-    #if q.get('type') == 'PointClass':
-    #    brick_tags += ['Point']
-    #elif q.get('type') == 'EquipmentClass':
-    #    brick_tags += ['Equipment']
+    if q.get('type') == 'PointClass':
+        brick_tags += ['Point']
+    elif q.get('type') == 'EquipmentClass':
+        brick_tags += ['Equipment']
 
     res = []
     most_likely, leftover = inf.most_likely_tagsets(brick_tags, limit)
