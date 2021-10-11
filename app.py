@@ -1,4 +1,5 @@
 from flask import Flask, request
+from flask_cors import CORS
 from flask_jsonpify import jsonify
 from abbrmap import abbrmap as tagmap
 import json
@@ -6,6 +7,7 @@ import brickschema
 import re
 
 app = Flask(__name__)
+CORS(app)
 
 metadata = {
     "name": "Brick Reconciliation Service",
@@ -43,6 +45,9 @@ def resolve(q):
         brick_tags += ['Point']
     elif q.get('type') == 'EquipmentClass':
         brick_tags += ['Equipment']
+    else:
+        q['type'] = 'BrickClass'
+        q['id'] = 'BrickClass'
 
     res = []
     most_likely, leftover = inf.most_likely_tagsets(brick_tags, limit)
